@@ -1,0 +1,374 @@
+/* ******************************************* */
+/* note: this styling is done mobile-first and therefore,
+the main styles are written for viewport width 375 and,
+the styles for tablet and desktop window are written in media queries */
+/* ******************************************* */
+
+/* universal styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Viewport window styles */
+html{
+    height: 100%;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/* ************************** */
+/* responsive design codes */
+/* media queries */
+
+/* mobile-375px =< */
+@media only screen and (min-width:375px){
+    /* main styles are here */
+    section#card{
+        background-color: white;
+        width: 90%;
+        margin: 40% auto;
+        border-radius: 25px;;
+    }
+    /* image styles */
+    article#image{
+        height: 40%;
+        width: 100%;
+    }
+    /* desktop image group */
+    article#image div#img-group-desktop{
+        display: none;
+    }
+    /* mobile image group */
+    article#image div#img-group-mobile{
+        display: block;
+    }
+    div#img-group-mobile img.mobile-image{
+        position: absolute;
+        top: 7%;
+        left: 10%;
+        z-index: 1;
+    }
+    div#img-group-mobile img.mobile-shadow{
+        position: relative;
+        left: 14%;
+    }
+    /* text styles */
+    article#text{
+        padding: 0px 35px 45px;
+    }
+    article#text h1{
+        text-align: center;
+        font-size: 36px;
+        line-height: 250%;
+        color: hsl(238, 29%, 16%);
+    }
+    article#text div#question-list div.list-item{
+        border-bottom: 1px solid hsl(240, 5%, 91%);
+    }
+    /* question styles */
+    div#question-list div.list-item div.question{
+        margin: 20px 0;
+        color: hsl(237, 12%, 33%);
+    }
+    div#question-list div.list-item div.question:hover{
+        color:hsl(14, 88%, 65%);
+        cursor: pointer;
+    }
+    div#question-list div.list-item div.ques-active{
+        font-weight: 700;
+        margin: 20px 0;
+        color: hsl(238, 29%, 16%);
+    }
+    div#question-list div.list-item div.ques-active:hover{
+        font-weight: 700;
+        margin: 20px 0;
+        color: hsl(238, 29%, 16%);
+    }
+    /* answer styles */
+    /* div#question-list div.list-item div.answer{
+        display:none;
+    } */
+    div#question-list div.list-item div.answer{
+        display: none;
+        line-height: 1.5;
+        margin-bottom: 20px;
+        color: hsl(240, 6%, 50%);
+    }
+    /* arrow styles */
+    div.list-item div.question span.arrow{
+        float:right;
+    }
+    div.list-item div.ques-active span.arrow{
+        float:right;
+        transform: rotate(180deg);
+    }
+}
+
+/* mobile- 425 =< */
+@media only screen and (min-width:425px){
+    /* main styles are here */
+    section#card{
+        background-color: white;
+        width: 90%;
+        margin: 40% auto;
+        border-radius: 25px;;
+    }
+    /* image styles */
+    article#image{
+        height: 40%;
+        width: 100%;
+    }
+    /* desktop image group */
+    article#image div#img-group-desktop{
+        display: none;
+    }
+    /* mobile image group */
+    article#image div#img-group-mobile{
+        display: block;
+    }
+    div#img-group-mobile img.mobile-image{
+        position: absolute;
+        top: 10%;
+        left: 13%;
+        z-index: 1;
+    }
+    div#img-group-mobile img.mobile-shadow{
+        position: relative;
+        left: 16%;
+    }
+    /* text styles */
+    article#text{
+        padding: 0px 35px 45px;
+    }
+    article#text h1{
+        text-align: center;
+        font-size: 36px;
+        line-height: 250%;
+        color: hsl(238, 29%, 16%);
+    }
+    article#text div#question-list div.list-item{
+        border-bottom: 1px solid hsl(240, 5%, 91%);
+    }
+    /* question styles */
+    div#question-list div.list-item div.question{
+        margin: 20px 0;
+        color: hsl(237, 12%, 33%);
+    }
+    div#question-list div.list-item div.ques-active{
+        font-weight: 700;
+        margin: 20px 0;
+        color: hsl(238, 29%, 16%);
+    }
+    /* answer styles */
+    /* div#question-list div.list-item div.answer{
+        display:none;
+    } */
+    div#question-list div.list-item div.answer{
+        display: none;
+        line-height: 1.5;
+        margin-bottom: 20px;
+        color: hsl(240, 6%, 50%);
+    }
+    /* arrow styles */
+    div.list-item div.question span.arrow{
+        float:right;
+    }
+    div.list-item div.ques-active span.arrow{
+        float:right;
+        transform: rotate(180deg);
+    }
+}
+
+/*  tablet -768px =< */
+@media only screen and (min-width:768px){
+    /* main styles are here */
+    section#card{
+        background-color: white;
+        width: 70%;
+        margin: 20% auto;
+        border-radius: 25px;;
+    }
+    /* image styles */
+    article#image{
+        height: 40%;
+        width: 100%;
+    }
+    /* desktop image group */
+    article#image div#img-group-desktop{
+        display: none;
+    }
+    /* mobile image group */
+    article#image div#img-group-mobile{
+        display: block;
+    }
+    div#img-group-mobile img.mobile-image{
+        position: absolute;
+        top: 7.5%;
+        left: 30%;
+        z-index: 1;
+    }
+    div#img-group-mobile img.mobile-shadow{
+        position: relative;
+        left: 26%;
+    }
+    /* text styles */
+    article#text{
+        padding: 0px 35px 45px;
+    }
+    article#text h1{
+        text-align: center;
+        font-size: 36px;
+        line-height: 250%;
+        color: hsl(238, 29%, 16%);
+    }
+    article#text div#question-list div.list-item{
+        border-bottom: 1px solid hsl(240, 5%, 91%);
+    }
+    /* question styles */
+    div#question-list div.list-item div.question{
+        margin: 20px 0;
+        color: hsl(237, 12%, 33%);
+    }
+    div#question-list div.list-item div.ques-active{
+        font-weight: 700;
+        margin: 20px 0;
+        color: hsl(238, 29%, 16%);
+    }
+    /* answer styles */
+    /* div#question-list div.list-item div.answer{
+        display:none;
+    } */
+    div#question-list div.list-item div.answer{
+        display: none;
+        line-height: 1.5;
+        margin-bottom: 20px;
+        color: hsl(240, 6%, 50%);
+    }
+    /* arrow styles */
+    div.list-item div.question span.arrow{
+        float:right;
+    }
+    div.list-item div.ques-active span.arrow{
+        float:right;
+        transform: rotate(180deg);
+    }
+}
+
+/* desktop- 1024px =< */
+@media only screen and (min-width: 1024px){
+    section#card{
+        width: 85%;
+        margin: 5% auto;
+        box-shadow: 0px 7px 20px 1px hsl(238, 29%, 16%);
+    }
+    article#image{
+        display: inline-block;
+        width: 50%;
+        height: 100%;
+    }
+    article#text{
+        display: block;
+        width: 50%;
+        height: 500px;
+        float: right;
+        padding: 5% 5% 5% 0%;
+        overflow: scroll;
+    }
+    article#text h1{
+        text-align: left;
+    }
+    /* desktop image group */
+    article#image div#img-group-desktop{
+        display: block;
+    }
+    div#img-group-desktop img.desktop-box{        
+        z-index: 2;
+        position: relative;
+        top: 230px;
+        left: -100px;
+    }
+    div#img-group-desktop img.desktop-woman{        
+        z-index: 1;
+        position: relative;
+        top: -90px;
+        left: -75px;
+    }
+    div#img-group-desktop img.desktop-shadow{        
+        position: absolute;
+        top: -180px;
+        left: -490px;
+        z-index: 0;
+    }
+    /* moble image group */
+    article#image div#img-group-mobile{
+        display: none;
+    }
+}
+
+/* desktop-1440px =< */
+@media only screen and (min-width: 1440px){
+    section#card{
+        width: 70%;
+        margin: 5% auto;
+        box-shadow: 0px 7px 20px 1px hsl(238, 29%, 16%);
+    }
+    article#image{
+        display: inline-block;
+        width: 40%;
+        height: 100%;
+    }
+    article#text{
+        display: block;
+        width: 60%;
+        height: 500px;
+        float: right;
+        padding: 5% 10%;
+        overflow: scroll;
+    }
+    article#text h1{
+        text-align: left;
+    }
+    /* desktop image group */
+    article#image div#img-group-desktop{
+        display: block;
+    }
+    div#img-group-desktop img.desktop-box{        
+        z-index: 2;
+        position: relative;
+        top: 230px;
+        left: -100px;
+    }
+    div#img-group-desktop img.desktop-woman{        
+        z-index: 1;
+        position: relative;
+        top: -90px;
+        left: -75px;
+    }
+    div#img-group-desktop img.desktop-shadow{        
+        position: absolute;
+        top: -180px;
+        left: -350px;
+        z-index: 0;
+    }
+    /* moble image group */
+    article#image div#img-group-mobile{
+        display: none;
+    }
+}
+
+
+/* nameplate styles */
+.attribution{
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a{
+    color: hsl(228, 45%, 44%);
+}
